@@ -23,6 +23,7 @@ public class ArticleBuyerController {
     @ApiOperation(value = "分页获取")
     @GetMapping
     public Result getByPage() {
+//        int i = 10/0;
         return Result.success(articleService.findArticle());
     }
 }
